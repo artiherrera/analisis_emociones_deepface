@@ -37,6 +37,5 @@ pip install opencv-python pandas deepface
 
 - **Emociones Analizadas:** Las emociones analizadas incluyen felicidad, tristeza, sorpresa, miedo, disgusto, ira y neutralidad.
 
-## Soporte
+- **Limitaciones:** Solo se puede analizar un video en el que se muestre una sola cara. 
 
-Si tienes alguna pregunta o encuentras algún problema, por favor crea un Issue en este repositorio.
