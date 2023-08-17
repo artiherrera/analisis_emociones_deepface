@@ -18,12 +18,12 @@ def process_video(video_path, output_path, id_usuario, id_video):
         if ret:
             try:
                 result = DeepFace.analyze(frame, actions=['emotion'])
-                time_seconds = frame_number / fps
-                emotion_data = result['emotion']
+                emotion_data = result[0]['emotion']
             except Exception as e:
                 print(f"Advertencia: No se pudo analizar el frame {frame_number} Error: {str(e)}")
-                emotion_data = {emotion: 333 for emotion in ['angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral']}
-            
+                emotion_data = {'angry': 333, 'disgust': 333, 'fear': 333, 'happy': 333, 'sad': 333, 'surprise': 333, 'neutral': 333}
+
+            time_seconds = frame_number / fps
             emotion_record = {'id_usuario': id_usuario, 'id_video': id_video, 'frame_number': frame_number, 'time_seconds': time_seconds, **emotion_data}
             emotions.append(emotion_record)
             frame_number += 1
