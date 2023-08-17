@@ -13,7 +13,7 @@ dependencies:
   - matplotlib
   - seaborn
   - numpy
-  
+  -
   - pip
   - pyprojroot
   - python=3.9
