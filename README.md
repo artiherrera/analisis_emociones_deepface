@@ -9,9 +9,9 @@ Este proyecto utiliza DeepFace para analizar las emociones en un video. El scrip
 
 Puedes instalar las bibliotecas requeridas utilizando el siguiente comando:
 
-\`\`\`bash
+
 pip install opencv-python pandas deepface
-\`\`\`
+
 
 ## Cómo Ejecutar
 
@@ -21,9 +21,9 @@ pip install opencv-python pandas deepface
 
 3. **Ejecutar el Script:** Ejecuta el siguiente comando para iniciar el script:
 
-   \`\`\`bash
-   python nombre_del_script.py
-   \`\`\`
+ 
+   python main.py
+
 
 4. **Seleccionar el Video:** Se abrirá una ventana para que selecciones el video que deseas analizar.
 
